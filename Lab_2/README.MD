@@ -4,4 +4,6 @@
 
 sdfsldkfgjslkgfd
 
+<img src="img/figure_1.png" width=200>
+
 ![](img/figure_1.png)
