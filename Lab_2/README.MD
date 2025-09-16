@@ -1,3 +1,7 @@
 # Lab 2
 
-dfksjdhfkjfh
+## Part 1
+
+sdfsldkfgjslkgfd
+
+dfklgjdlfkgj
