@@ -8,4 +8,4 @@ sdfsldkfgjslkgfd
 
 comments aslkdjasldkajd
 
-![](img/figure_1.png)
+##part 2 
