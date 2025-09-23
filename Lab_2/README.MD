@@ -22,7 +22,7 @@ Quartus Prime Lite Edition
 
 
 
-##part 1
+## Part 1
 
 Objective: Display SW[15–0] values on HEX3–HEX0 (modified for DE10-Lite).
 One HEX display is driven by each 4-bit group.
@@ -40,7 +40,7 @@ module seg7_dec(
     // … (remaining segments logic)
 endmodule
 
-##Part 2 
+## Part 2 
 
 We need to design a circuit that converts a 4-bit binary number V = v3v2v1v0 into its two-digit decimal 
 equivalent D = d1d0. For example, binary 1010 (decimal 10) should be displayed as "10" on the seven
@@ -56,7 +56,7 @@ bin_to_dec b2d (
     .o_seg0(HEX0), .o_seg1(HEX1)
 );
 
-##Part 3
+## Part 3
 
 We need to design a 4-bit ripple-carry adder circuit that adds two 4-bit numbers. The circuit consists of 
 four full adder modules connected in a chain, with the carry output of each adder connected to the 
@@ -102,7 +102,7 @@ full_adder FA0(A[0], B[0], cin, S[0], c1);
     assign LEDG[4] = cout; 
 endmodule
 
-##Part 4 
+## Part 4 
 
 The objective is to add two BCD digits (A and B).
  SW[3:0] and SW[7:4] are input.
@@ -136,7 +136,7 @@ module bcd_adder(
 endmodule
 
 
-##Part5
+## Part5
 
 Objective: Add A1A0 + B1B0, two 2-digit BCD digits.
  constructed with two instances of the BCD adder from Part IV.
@@ -176,7 +176,7 @@ module bcd_2digit_adder (
 
 endmodule
 
-##Part6
+## Part6
 
 The objective is to convert a 6-bit binary number (0–63) into two-digit BCD.
  SW[5:0] is the input.
