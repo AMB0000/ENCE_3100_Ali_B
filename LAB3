@@ -39,7 +39,7 @@ should be included in the code. Compiling the code produces the circuit with fou
 
 I began by coming up with a new idea for my DE-series Board.  The Verilog file for the RS latch i made myself.
 
-![My Screenshot](https://github.com/AMB0000/ENCE_3100_Ali_B/blob/main/screenshot1.png?raw=true)
+![My Screenshot](SC1.png)
 
 
 Here is my code,
@@ -72,8 +72,7 @@ I created a Verilog file code using the /* synthesis maintain */ command.
 I then verified my circuit using RTL Viewer after compiling my code.
 
 
-![My Screenshot](https://github.com/AMB0000/ENCE_3100_Ali_B/blob/main/screenshot1.png?raw=true)
- 
+![My Screenshot](SC2.png) 
 
 
 
@@ -96,6 +95,13 @@ module part2 (Clk, D, Q);
     assign Q = Qa;
 endmodule
 
+
+The gated D latch was then implemented on my DE-series board using a different project that I had made.
+The top-level module that housed the proper input and output ports (the pins) made up the projected. 
+In the top-level module, I initialize my latch.  I controlled the latch's D input using switch SW0. 
+I then input the Clk using SW1.  Lastly, I linked LEDR0 to the Q output.
+I assembled the projection and downloaded it to my board after adding the necessary pin assignments. 
+I then toggled the D and Clk switches and looked at the Q output to make sure my circuit was working.
 
 
 
