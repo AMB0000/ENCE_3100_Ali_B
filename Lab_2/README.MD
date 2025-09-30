@@ -115,9 +115,50 @@ I utilized switch SW1 as the clock input and switch SW0 to operate the flip-flop
 Next, I linked LEDR0 to the Q output.  The necessary pin assignments are included. 
 I then verified my circuit using RTL Viewer after compiling my code.
 
+![My Screenshot](SC4.png)
+
+My code, 
+
+module part1 (input [1:0] SW, output [9:0] LEDR);
+
+    wire Qm, Qs;
+
+    D_latch U1 (~SW[1], SW[0], Qm);
+    D_latch U2 (SW[1], Qm, Qs);
+
+    assign LEDR[0] = Qs;
+
+endmodule
+
+
+module D_latch (input Clk, D, output Q);
+
+    wire S, R, S_g, R_g, Qa, Qb;
+
+    assign S   = D;
+    assign R   = ~D;
+    assign S_g = ~(S & Clk);
+    assign R_g = ~(R & Clk);
+    assign Qa  = ~(R_g & Qb);
+    assign Qb  = ~(S_g & Qa);
+
+    assign Q = Qa;
+
+endmodule
+
+
+![My Screenshot](SC5.png)
+
 
 
 # Part 4 
+
+Three different storage components are included in the circuit provided in this lab section: 
+a gated D latch, a positive-edge triggered D flip-flop, and a negative-edge triggered D flip-flop.
+I began by coming up with a fresh project.  The gated D latch is then defined in a Verilog file code that I created.  I then verified my circuit.
+
+![My Screenshot](SC6.png)
+
 
 
 
