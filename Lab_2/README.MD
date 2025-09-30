@@ -2,10 +2,6 @@
 
 
 
-Student : Ali Behbehani
-Instructor: Goncalo Perirera martins
-
-
 # Introduction
 
     In this lab, our goal is to explore how storage elements can be implemented 
