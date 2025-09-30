@@ -39,7 +39,8 @@ should be included in the code. Compiling the code produces the circuit with fou
 
 I began by coming up with a new idea for my DE-series Board.  The Verilog file for the RS latch i made myself.
 
-![Alt text](Screenshot 2025-09-29 223824.png) 
+![My Screenshot](https://github.com/AMB0000/ENCE_3100_Ali_B/blob/main/screenshot1.png?raw=true)
+
 
 Here is my code,
 
@@ -71,7 +72,8 @@ I created a Verilog file code using the /* synthesis maintain */ command.
 I then verified my circuit using RTL Viewer after compiling my code.
 
 
-![Alt text](Screenshot 2025-09-29 223824.png) 
+![My Screenshot](https://github.com/AMB0000/ENCE_3100_Ali_B/blob/main/screenshot1.png?raw=true)
+ 
 
 
 
