@@ -4,7 +4,7 @@
 
 # Introduction
 
-    In this lab, our goal is to explore how storage elements can be implemented 
+In this lab, our goal is to explore how storage elements can be implemented 
 in an FPGA. Although Altera FPGAs provide built-in flip-flops that are commonly used 
 to store data, we will first demonstrate how storage elements can be created
 without relying on these dedicated flip-flops.
@@ -12,7 +12,7 @@ without relying on these dedicated flip-flops.
 
 ## Objective
 
-    Before using the FPGA’s internal flip-flops (which we will cover in Part IV),
+Before using the FPGA’s internal flip-flops (which we will cover in Part IV),
 we will show how to construct basic memory behavior by designing circuits that
 retain information through logic and feedback paths.
 This step will highlight how storage can be achieved at a structural level and
@@ -23,7 +23,7 @@ deepen our understanding of how sequential behavior is realized inside programma
 
 # Part 1
 
-    In this lab, we will demonstrate how to generate storage elements in an FPGA without the need for its specialized Flip-Flops.
+In this lab, we will demonstrate how to generate storage elements in an FPGA without the need for its specialized Flip-Flops.
 A gated RS latch circuit is the one shown below. Although the latch can be properly implemented in a single 4-input LUT, 
 the implementation prevents the observation of its internal signals, R_g and S_g, as they are not supplied as LUT outputs.
 A compiler directive must be included in the code in order to maintain these internal signals in the implemented circuit.
@@ -32,7 +32,7 @@ should be included in the code. Compiling the code produces the circuit with fou
 
 
 
-I began by coming up with a new idea for my DE-series Board.  The Verilog file for the RS latch i made myself.
+
 
 ![My Screenshot](SC1.png)
 
@@ -60,7 +60,7 @@ endmodule
 # Part 2 
 
 
-    The circuit provided in this lab section is a gated D latch circuit.
+The circuit provided in this lab section is a gated D latch circuit.
 I began by coming up with a fresh idea. Then, in order to make sure
 that the distinct logic elements used to implement signals R, S_g, R_g, Qa, and Qb were used, 
 I created a Verilog file code using the /* synthesis maintain */ command.
@@ -91,7 +91,7 @@ module part2 (Clk, D, Q);
 endmodule
 
 
-    The gated D latch was then implemented on my DE-series board using a different project that I had made.
+The gated D latch was then implemented on my DE-series board using a different project that I had made.
 The top-level module that housed the proper input and output ports (the pins) made up the projected. 
 In the top-level module, I initialize my latch.  I controlled the latch's D input using switch SW0. 
 I then input the Clk using SW1.  Lastly, I linked LEDR0 to the Q output.
@@ -104,7 +104,8 @@ I then toggled the D and Clk switches and looked at the Q output to make sure my
 
 
 # Part 3
-    The circuit provided in this lab part is a master-slave D filp-flop circuit. 
+
+The circuit provided in this lab part is a master-slave D filp-flop circuit. 
 I began by coming up with a brand-new project.  A Verilog file code that instantiates 
 two copies of your gated D latch was then created by me.  The DEseries board's suitable input and output ports.
 I utilized switch SW1 as the clock input and switch SW0 to operate the flip-flop's D input.
