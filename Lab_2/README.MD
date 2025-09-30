@@ -105,6 +105,9 @@ I then toggled the D and Clk switches and looked at the Q output to make sure my
 
 
 
+![My Screenshot](SC3.png)
+
+
 # Part 3
 
 
