@@ -6,7 +6,7 @@ Student : Ali Behbehani
 Instructor: Goncalo Perirera martins
 
 
-## Introduction
+# Introduction
 
 In this lab, 
 our goal is to explore how storage elements can be implemented in an FPGA. 
@@ -26,8 +26,7 @@ deepen our understanding of how sequential behavior is realized inside programma
 
 
 
-##part 1
-## Part 1
+# Part 1
 
 In this lab, we will demonstrate how to generate storage elements in an FPGA without the need for its specialized Flip-Flops.
 A gated RS latch circuit is the one shown below. Although the latch can be properly implemented in a single 4-input LUT, 
@@ -42,29 +41,65 @@ I began by coming up with a new idea for my DE-series Board.  The Verilog file f
 
 ![Alt text](Screenshot 2025-09-29 223824.png) 
 
+Here is my code,
 
+module part1 (Clk, R, S, Q);
+    input Clk, R, S;
+    output Q;
 
-##Part 2 
-## Part 2 
+    wire R_g, S_g, Qa, Qb /*synthesis keep*/;
 
+    and (R_g, R, Clk);
+    and (S_g, S, Clk);
+    nor (Qa, R_g, Qb);
+    nor (Qb, S_g, Qa);
 
-
-##Part 3
-## Part 3
-
-
-
-##Part 4 
-## Part 4 
-
-
-
-
-##Part5
-## Part5
+    assign Q = Qa;
+endmodule
 
 
 
-##Part6
-## Part6
+
+
+# Part 2 
+
+
+The circuit provided in this lab section is a gated D latch circuit.
+I began by coming up with a fresh idea. Then, in order to make sure
+that the distinct logic elements used to implement signals R, S_g, R_g, Qa, and Qb were used, 
+I created a Verilog file code using the /* synthesis maintain */ command.
+I then verified my circuit using RTL Viewer after compiling my code.
+
+
+
+
+
+My code, 
+
+module part2 (Clk, D, Q);
+    input Clk, D;
+    output Q;
+
+    wire R_g, S_g, Qa, Qb /*synthesis keep*/;
+
+    nand (R_g, R, Clk);
+    nand (S_g, D, Clk);
+    nand (Qa, R_g, Qb);
+    nand (Qb, S_g, Qa);
+
+    assign R = ~D;
+    assign Q = Qa;
+endmodule
+
+
+
+
+# Part 3
+
+
+
+# Part 4 
+
+
+
 
