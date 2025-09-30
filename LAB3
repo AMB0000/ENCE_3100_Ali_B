@@ -39,7 +39,7 @@ should be included in the code. Compiling the code produces the circuit with fou
 
 I began by coming up with a new idea for my DE-series Board.  The Verilog file for the RS latch i made myself.
 
-![Alt text](cda7f16) 
+![Alt text](Screenshot 2025-09-29 223824.png) 
 
 Here is my code,
 
@@ -69,6 +69,9 @@ I began by coming up with a fresh idea. Then, in order to make sure
 that the distinct logic elements used to implement signals R, S_g, R_g, Qa, and Qb were used, 
 I created a Verilog file code using the /* synthesis maintain */ command.
 I then verified my circuit using RTL Viewer after compiling my code.
+
+
+![Alt text](Screenshot 2025-09-29 223824.png) 
 
 
 
