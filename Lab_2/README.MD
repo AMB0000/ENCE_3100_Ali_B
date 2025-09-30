@@ -160,6 +160,33 @@ I began by coming up with a fresh project.  The gated D latch is then defined in
 ![My Screenshot](SC6.png)
 
 
+My code, 
+
+module part4 (D, Clk, Qa, Qb, Qc, Qan, Qbn, Qcn);
+    input D, Clk;
+    output reg Qa, Qb, Qc;
+    output Qan, Qbn, Qcn;
+
+    assign Qan = ~Qa;
+    assign Qbn = ~Qb;
+    assign Qcn = ~Qc;
+
+    always @(D or Clk) begin
+        if (Clk)
+            Qa <= D;
+    end
+
+    always @(posedge Clk) begin
+        Qb <= D;
+    end
+
+    always @(negedge Clk) begin
+        Qc <= D;
+    end
+endmodule
+
+
+
 
 
 
