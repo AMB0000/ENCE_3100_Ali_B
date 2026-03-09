@@ -133,3 +133,35 @@ Communication protocols such as UART and I2C allow the system to interact with e
 • Power Regulation Circuit  
 
 ---
+## Applications
+
+• Embedded Systems Education  
+• Digital Signal Processing Experiments  
+• Sensor Data Acquisition Systems  
+• Real-Time Monitoring Systems  
+• Microprocessor Laboratory Training  
+
+---
+
+## Conclusion
+
+The DSP Shield was successfully designed, fabricated, and tested for microprocessor-based signal processing applications. The project demonstrates practical implementation of embedded system concepts including mixed-signal processing, communication interfaces, and real-time monitoring.
+
+This platform serves as an effective educational tool for students studying microprocessors and embedded systems.
+
+---
+
+## Author
+
+**Student Name:** Ali Behbehani  
+**Course:** ENCE 3100 – Microprocessors  
+**Project:** DSP Shield Design  
+
+---
+
+## Project Images
+
+![Board Angle](images/board_angle.jpg)
+![PCB Routing](images/pcb_routing.jpg)
+
+---
