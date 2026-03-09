@@ -68,3 +68,68 @@ The PCB layout was optimized to reduce electrical noise, improve signal flow, an
 
 ### PCB Layout – Top View
 ![PCB Top](images/pcb_top.jpg)
+
+### PCB Layout – Bottom View
+![PCB Bottom](images/pcb_bottom.jpg)
+
+---
+
+##  Assembly Stage
+
+After PCB fabrication, electronic components were assembled onto the board using proper soldering techniques.
+
+The following components were mounted:
+
+• Integrated Circuits  
+• Resistors and Capacitors  
+• Connectors and Headers  
+• Display Module  
+• Input Buttons and Potentiometers  
+
+All components were inspected carefully to ensure correct polarity and reliable electrical connections.
+
+### Assembled Board
+![Assembled Board](images/board_top.jpg)
+
+---
+
+##  Testing Stage
+
+The assembled DSP shield was tested to verify its functionality and performance.
+
+Testing included:
+
+• Power regulation verification  
+• Analog signal acquisition  
+• DAC waveform generation  
+• Sensor data processing  
+• Display output verification  
+• UART and I2C communication testing  
+
+
+All modules operated successfully under normal test conditions.
+
+---
+
+## Working Principle
+
+The microprocessor acts as the brain of the system. It reads analog and digital inputs from sensors and user controls. The analog signals are converted into digital values using ADC for processing.
+
+Based on programmed logic, the system processes the signals and generates digital outputs. These outputs are either displayed on the OLED screen or converted back into analog signals using the DAC.
+
+Communication protocols such as UART and I2C allow the system to interact with external devices and modules efficiently.
+
+---
+
+## Major Hardware Components
+
+• Microprocessor / Microcontroller Unit  
+• IMU Sensor Module  
+• OLED Display  
+• R-2R Ladder DAC Circuit  
+• Push Buttons  
+• Potentiometers  
+• Communication Interfaces  
+• Power Regulation Circuit  
+
+---
