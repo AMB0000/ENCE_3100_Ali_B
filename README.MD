@@ -161,7 +161,7 @@ This platform serves as an effective educational tool for students studying micr
 
 ## Project Images
 
-![Board Angle](images/board_angle.jpg)
+![Board Angle](images/board_angle.png)
 ![PCB Routing](images/pcb_routing.jpg)
 
 ---
