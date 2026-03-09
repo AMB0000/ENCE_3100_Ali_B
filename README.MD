@@ -28,7 +28,7 @@ The system integrates sensors, user inputs, signal processing circuits, and disp
 
 ---
 
-## 🧩 System Block Diagram
+## System Block Diagram
 
 The block diagram represents the overall system architecture. The microprocessor acts as the central controller that receives input signals, processes data, and generates output signals.
 
